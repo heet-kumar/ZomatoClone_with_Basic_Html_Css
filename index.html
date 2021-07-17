@@ -4,90 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zomato Landing Page</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" 
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="navbar_brand">
-                <img src="./assets/logo.png" alt="logoImage" class="navbar_logo">
+        <div class="logo">
+            <img class="imglogo" src="./assets/logo.png" alt="logo_header">
+        </div>
+        <input type="checkbox" id="ham" />
+        <label for="ham" id="hamburger">
+            <div class="btn" style="padding: 13% 26%;">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <div class="navbar_nav_items">
-                <button class="nav_item button_primary">Order Food</button>
-            </div>
-        </nav>
+            <!-- click me! -->
+        </label>
+        <div class="pbtn">
+            <button class="btn">Order Food</button>
+        </div>
     </header>
+    <section class="navlist">
+        <ul class="navul">
+            <li>Products</li>
+            <li>Resturants</li>
+            <li>Pricing</li>
+            <li>About Us</li>
+        </ul>
+        <div style="width: 30%; margin: 4% 0%;">
+            <button class="btn">Order Food</button>
+        </div>
+    </section>
 
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero_container">
-            <div class="hero_image_container">
-                <img class="hero_image" src="./assets/hero.jpg" alt="hero image">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="left">
+            <h1 class="hero_text">Order food from favourite restaurants near you.</h1>
+            <div class="pbtn2">
+                <button class="btn">Order Now</button>
             </div>
-            <div class="hero_description">
-                <h1 class="hero_text">
-                    Order Food from Favourite restaurants near you .
-                </h1>
-                <button class="button_primary">Order Now</button>
+        </div>
+        <div class="right">
+            <div class="imge">
+                <img class="im1" src="./assets/hero.jpg" alt="hero_image">
+                <img class="im2" src="./assets/svg/heroShape.svg" alt="pink Shape">
+                <img class="im3" src="./assets/svg/herobgpattren.svg" alt="ruled_pattern">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Explore Menu -->
-        <section class="explore_menu_container">
-            <h1 class="explore_menu_text">Explore Our Menu</h1>
-            <div class="explore_menu_gradient_bg"></div>
-            <div class="explore_menu_lists">
+    <!-- Video Section -->
+    <!-- <section class="video_section">
+        <div class="video">
+            <video class="videomp4" controls autoplay >
+                <source src="https://player.vimeo.com/video/323795266.mp4" type="video/mp4">
+            </video>
+            <div class="video_background"></div>
+        </div>
+        <div class="video_text">
+            <p>Your food will be prepared safely with an experienced chef, without compromising on the quality and hygiene.</p>
+        </div>
+    </section> -->
 
-                
-                <div class="food_menu_card" id="burger">
-                    <img src="./assets/burger.jpg" alt="burger" class="food_image">
-                    <div class="food_menu_card_description">
-                        <h3 class="food_title">Burgers</h3>
-                        <p class="food_restaurants">
-                            Burger King, Mcdonalds, Burger Place<span style="color: red;">+3</span>
-                        </p>
+    <!-- Explore Menu Section -->
+    <div class="ems">
+        <div class="ems_background"></div>
+        <div class="ems_container">
+            <h1 class="text">Explore our menu</h1>
+            <div class="cards3">
+                <!-- Burgers -->
+                <div class="b_card_container">
+                    <div class="card_image_container">
+                        <img class="card_imge"src="./assets/burger.jpg" alt="Burger Image">
                     </div>
+                    <h2 class="card_title"><strong>Burgers</strong></h2>
+                    <p class="places">Burger King, Mcdonalds, Burger Place <span style="color:red;">+3</span></p>
                 </div>
-            
-        <!-- Pizza -->
-        
-                <div class="food_menu_card" id="pizza">
-                    <img src="./assets/pizza.jpg" alt="Pizza" class="food_image">
-                    <div class="food_menu_card_description">
-                        <h3 class="food_title">Pizza</h3>
-                        <p class="food_restaurants">
-                            Pizza Hut, Domino's Pizza
-                            <span style="color: red;">+3</span>
-                        </p>
-                    </div>
-                </div>
-            
-        <!-- Ice Cream -->
-        
-                <div class="food_menu_card" id="ice-cream">
-                    <img src="./assets/iceCream.jpg" alt="icecream" class="food_image">
-                    <div class="food_menu_card_description">
-                        <h3 class="food_title">Ice-cream</h3>
-                        <p class="food_restaurants">
-                            Burger King, Creaminess, Burger Place<span style="color: red;">+3</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            
-            <div class="explore_menu_view_more">
-                <button class="button_primary">View More</button>
+                <!-- Pizza -->
+                <div class="p_card_container">
+                    <div class="card_image_container">
+                        <img class="card_imge"src="./assets/pizza.jpg" alt="Burger Image">
+                    </div>
+                    <h2 class="card_title"><strong>Pizza</strong></h2>
+                    <p class="places">Pizza Hut, Domino's Pizza <span style="color:red;">+3</span></p>
+                </div>
+
+                <!-- Ice cream -->
+                <div class="i_card_container">
+                    <div class="card_image_container">
+                        <img class="card_imge"src="./assets/iceCream.jpg" alt="Burger Image">
+                    </div>
+                    <h2 class="card_title"><strong>Ice Creams</strong></h2>
+                    <p class="places">Baskin Robins, Ibaco <span style="color:red;">+3</span></p>
+                </div>
+
             </div>
-        </section>
-            
-    </main>
+            <button class="btn2">View More</button>
+        </div>
+    </div>
+
+    <!-- Resturant section -->
+    <section class="restaurant_photoes">
+        <div class="rest_matter">
+            <h1 class="rest_text">Order From 100s of restaurants</h1>
+        </div>
+        <div class="collage">
+            <div class="frame1">
+                <img class="img1" src="./assets/restaurant1.jpg" alt="Resturant Image 1">
+                <img class="img2" src="./assets/restaurant2.jpg" alt="Resturant Image 2">
+            </div>
+            <div class="frame2">
+                <img class="img3" src="./assets/restaurant4.jpg" alt="Resturant Image 3">
+                <img class="img4" src="./assets/restaurant3.jpg" alt="Resturant Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Secction -->
+    <section class="update">
+        <div class="update_inside">
+            <div class="update_heading">Stay Updated</div>
+            <div class="update_input">
+                <input type="email" placeholder="example@email.com" id="email_input">
+                <div class="pbtn3">
+                    <button class="btn">Get Updates</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Image -->
+    <section class="quote_image">
+       <div class="quote_container"></div>
+       <div class="quote">When a man's stomach is full it makes no difference whether he is rich or poor.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="contain">
+                <img class="lg" src="./assets/logo.png" alt="Logo">
+                <ul class="list">
+                    <li class="cont">Pricing</li>
+                    <li class="cont">Terms and condition</li>
+                    <li class="cont">Partnership</li>
+                    <li class="cont">Career</li>
+                    <li class="cont">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
