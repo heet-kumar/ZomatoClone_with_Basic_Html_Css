@@ -693,6 +693,7 @@ header{
     }
     .rest_text{
         font-size: 150%;
+        text-align: center;
     }
     .collage{
         width: 100%;
